@@ -10,6 +10,17 @@ const HomePage = () => {
 
     return (
         <div>
+            <style>
+                {`
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+`}</style>
         <div className="body w3-black" style={{ paddingTop: ".9rem" }}>
           {/* Icon Bar (Sidebar - hidden on small screens) */}
           <nav className="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
@@ -82,7 +93,7 @@ const HomePage = () => {
   
           <div className="page-container" id="main">
             <div className=" w3-padding-large">
-              <h1 className="w3-jumbo w3-animate-left w3-margin-top">
+              <h1 className="w3-jumbo w3-animate-left"style={{marginTop: "4rem"}}>  
                 <span className="w3-hide-small">I&apos;m</span> Joe Baseball.
               </h1>
               <p>
@@ -103,12 +114,18 @@ const HomePage = () => {
                 width="1500"
                 height="1108"
               />
-   </div>
-
-      {/* Profile Section  */}
+                  {/* Profile Section  */}
       <div className="demo1-player-profile" id="demo1-player-profile">
               <PlayerProfile />
             </div>
+
+
+
+
+
+   </div>
+
+  
            
 
             {/* Performance Section 

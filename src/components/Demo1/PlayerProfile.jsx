@@ -11,30 +11,18 @@ import PlayerResume from "../../assets/PDF/PlayerResume.pdf";
 const PlayerProfile = () => {
   return (
     <div>
-      <style>
-        {`
-  
-        /*start ANIMATIONS*/
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.animate-slide-left {
-  animation: slideLeft 2s ease-in-out;
-}
- `}
-      </style>
-      <div className="page-container">
+            <style>
+                {`
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+`}</style>
+      <div className="page-container justify-content-center"> 
         {/* Page Content */}
 
         {/* Performance Section */}
@@ -54,7 +42,7 @@ const PlayerProfile = () => {
          }}
           */}
 
-              <div className="row d-flex justify-content-center align-items-center g-3 py-2">
+              <div className="row d-flex justify-content-center align-items-center g-3 p-2">
                 {/* Main row with column 4 and nested columns in column 8 */}
                 <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
                   <div>
@@ -512,8 +500,8 @@ const PlayerProfile = () => {
                       </div>
 
 {/* for small and medium*/}
-                         <div className=" w3-hide-large py-1">
-                         <div className="w3-text-white mt-3 w3-hide-large">
+                         <div className=" w3-hide-large py-2">
+                         <div className="w3-text-white mt-5 w3-hide-large">
                       <h1 className="w3-text-light-grey">
                         <i className="fas fa-dumbbell small w3-margin-right"></i>Player Metrics</h1>
                       <hr className="w3-opacity mb-4" />
@@ -577,7 +565,7 @@ const PlayerProfile = () => {
                           </span>
                         </h4>
                         <div className="w3-text-white">
-                      <h1 className="w3-text-light-grey"><i className=" fas fa-book-open w3-margin-right"></i>Eligibility Status</h1>
+                      <h1 className="w3-text-light-grey"><i className=" fas fa-book-open w3-margin-right mt-5"></i>Eligibility Status</h1>
                       <hr className="w3-opacity" />
                     </div>
                         <div className="py-1 mt-4">
