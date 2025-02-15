@@ -108,9 +108,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <img
               src={ClaySmall}
               alt="boy"
-              className="w3-image w3-hide-large"
-              width="1500"
-              height="1108"
+              className="w3-image w3-hide-large mb-2"
+              width="100%"
             />
 
             <img

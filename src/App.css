@@ -1,4 +1,15 @@
+/* Importing external stylesheets */
+@import url("https://use.typekit.net/tce5mmy.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 @import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+
+
 
 * {
     font-family:sans-serif;

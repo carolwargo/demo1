@@ -37,9 +37,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
               <div className="row d-flex justify-content-center align-items-center g-3">
                 {/* Main row with column 4 and nested columns in column 8 */}
-                <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
-                  <div>
-                    <img src={ClaySmall} alt="clay" style={{ width: "80%" }} />
+                <div className="col-sm-12 col-md-4 col-lg-4">
+                  <div className="w3-hide-small w3-hide-medium">
+                    <img src={ClaySmall} alt="clay" style={{ width: "90%" }} />
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-8 col-lg-8">
