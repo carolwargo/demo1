@@ -1,0 +1,92 @@
+@keyframes slideRight {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-right {
+  animation: slideRight 2s ease-in-out;
+}
+
+        /*start ANIMATIONS*/
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          
+          @keyframes slideLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+          }
+          
+          .animate-fade-in {
+            animation: fadeIn 2s ease-in-out;
+          }
+          
+          .animate-slide-left {
+            animation: slideLeft 2s ease-in-out;
+          }
+          
+          /*end ANIMATIONS*/
+          body, h1,h2,h3,h4,h5,h6 {
+            font-family: "Montserrat", sans-serif;
+          }
+          .w3-row-padding img {
+            margin-bottom: 12px;
+          }
+          .w3-sidebar {
+            width: 120px;background: #222;
+          }
+
+          
+          #main {
+            margin-left: 120px;
+          }
+
+          @media only screen and (max-width: 992px) {
+            #main {
+              margin-left: 0 !important;
+            }
+          }
+          
+
+          @media only screen and (max-width: 600px) {
+            #main {
+              margin-left: 0 !important; /* Add !important to ensure it overrides */
+            }
+          }
+          
+         
+          .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+          }
+          
+          .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            text-align: center;
+          }
+          
+          .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .close-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+          }
+          

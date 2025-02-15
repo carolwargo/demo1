@@ -1,7 +1,8 @@
-import ClaySmall from '../images/ClaySmall.jpg';
-import ClayCover3 from '../images/ClayCover3.jpg';
+import ClaySmall from '../assets/images/Profiles/ClaySmall.png'; 
+import ClayCover3 from '../assets/images/Profiles/ClayCover3.png';
+import PlayerProfile from '../components/Demo1/PlayerProfile';
 import { RiHome6Line } from "react-icons/ri";
-
+import "../styles/demo.css";
 
 
 
@@ -104,11 +105,11 @@ const HomePage = () => {
               />
    </div>
 
-      {/* Profile Section 
+      {/* Profile Section  */}
       <div className="demo1-player-profile" id="demo1-player-profile">
               <PlayerProfile />
             </div>
-            */}
+           
 
             {/* Performance Section 
             <div
