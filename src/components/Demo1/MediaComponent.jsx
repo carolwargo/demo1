@@ -7,12 +7,12 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { InView } from "react-intersection-observer";
-import ClaySmall from '../assets/images/Profiles/ClaySmall.png';
-import Offense from '../assets/images/Video/Offense.png';
-import Defense from '../assets/images/Video/Defense.png';
-import MLB from '../assets/images/Video/MLB.png';
+import ClaySmall from '../../assets/images/Profiles/ClaySmall.png';
+import Offense from '../../assets/images/Video/Offense.png';
+import Defense from '../../assets/images/Video/Defense.png';
+import MLB from '../../assets/images/Video/MLB.png';
 import { Link } from 'react-router-dom';
-import '../styles/media.css';
+import '../../styles/media.css';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 

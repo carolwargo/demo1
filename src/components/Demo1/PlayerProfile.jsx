@@ -34,15 +34,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                ${inView ? "animate-fade-in" : ""}`}
               id="profile"
             >
-              {/**   style={{backgroundImage: `url(${ProfileBG})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-         
-         }}
-          */}
 
-              <div className="row d-flex justify-content-center align-items-center g-3 p-2">
+              <div className="row d-flex justify-content-center align-items-center g-3">
                 {/* Main row with column 4 and nested columns in column 8 */}
                 <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
                   <div>

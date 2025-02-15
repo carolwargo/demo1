@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { InView } from "react-intersection-observer";
-import DBWhite from "../../assets/images/Demo1/DBWhite.png";
+import DBWhite from "../../assets/images/Round/DBWhite.png";
 import UA from "../../assets/images/Round/UA.png";
 import Gatorade from "../../assets/images/Round/Gadorade.png";
 import Big26 from "../../assets/images/Round/Big26.png";

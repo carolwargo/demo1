@@ -11,10 +11,10 @@ import Letter4 from '../../assets/images/Letters/Letter4.png';
 import '../../styles/demo.css';
 
 const Letters = [
-  {id: 1, image: Letter1, name: "Jane Doe"},
-  {id: 2, image: Letter2, name: "Jane Dough"},
-  {id: 3, image: Letter3, name: "Jax Dough"},
-  {id: 4, image: Letter4, name: "Joe Coach"}
+  {id: 1, image: Letter1, name: "JANE DOE", phone:'(555) 555-5555', email:'mail@gmail.com'},
+  {id: 2, image: Letter2, name: "JANE DOUGH", phone:'(555) 555-5555', email:'mail@gmail.com'},
+  {id: 3, image: Letter3, name: "JAX DOUGH", phone:'(555) 555-5555', email:'mail@gmail.com'},
+  {id: 4, image: Letter4, name: "JOE COACH", phone:'(555) 555-5555', email:'mail@gmail.com'}
 ]
 
 
@@ -80,9 +80,9 @@ const PlayerTestimonials = () => {
             <br /><i>Teacher- Htown High School</i>.
             <br />
             <span>
-        <i className="small">
-          &quot;Joe Baseball is the best. Lorem ipsum dolor adipisicing elit. Voluptate
-          quibusdam totam pariatur accusamus, quam velit at ad enim animi aliquam,
+        <i className="">
+          &quot;Joe Baseball is the best. Lorem adipisicing elit. Voluptate
+          quibusdam totam pariatur accusamus, quam velit at aliquam,
           porro tempore fuga neque similique. Necessitatibus, iusto
           <span
   className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
@@ -92,7 +92,7 @@ const PlayerTestimonials = () => {
   }}
   style={{ cursor: "pointer", color: "#007bff" }}
 >
-  continue reading...
+  Full Letter...
 </span>
         </i>
       </span>
@@ -113,9 +113,9 @@ const PlayerTestimonials = () => {
             <br /><i>Principal- Htown High School</i>.
             <br />
             <span>
-        <i className="small">
-          &quot;Joe Baseball is the best. Lorem ipsum dolor adipisicing elit. Voluptate
-          quibusdam totam pariatur accusamus, quam velit at ad enim animi aliquam,
+        <i className="">
+          &quot;Joe Baseball is the best. Lorem adipisicing elit. Voluptate
+          quibusdam totam pariatur accusamus, quam velit at aliquam,
           porro tempore fuga neque similique. Necessitatibus, iusto
           <span
   className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
@@ -125,7 +125,7 @@ const PlayerTestimonials = () => {
   }}
   style={{ cursor: "pointer", color: "#007bff" }}
 >
-  continue reading...
+  Full Letter...
 </span>
         </i>
       </span>
@@ -146,9 +146,9 @@ const PlayerTestimonials = () => {
          <br /><i>Varsity Coach- Htown High School</i>.
        <br />
        <span>
-        <i className="small">
-          &quot;Joe Baseball is the best. Lorem ipsum dolor adipisicing elit. Voluptate
-          quibusdam totam pariatur accusamus, quam velit at ad enim animi aliquam,
+        <i className="">
+          &quot;Joe Baseball is the best. Lorem adipisicing elit. Voluptate
+          quibusdam totam pariatur accusamus, quam velit at aliquam,
           porro tempore fuga neque similique. Necessitatibus, iusto
           <span
   className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
@@ -158,7 +158,7 @@ const PlayerTestimonials = () => {
   }}
   style={{ cursor: "pointer", color: "#007bff" }}
 >
-  continue reading...
+  Full Letter...
 </span>
         </i>
       </span>
@@ -181,9 +181,9 @@ const PlayerTestimonials = () => {
          <br /><i>Summer Coach- Team Name</i>. 
          <br />
          <span>
-        <i className="small">
-          &quot;Joe Baseball is the best. Lorem ipsum dolor adipisicing elit. Voluptate
-          quibusdam totam pariatur accusamus, quam velit at ad enim animi aliquam,
+        <i className="">
+          &quot;Joe Baseball is the best. Lorem adipisicing elit. Voluptate
+          quibusdam totam pariatur accusamus, quam velit at aliquam,
           porro tempore fuga neque similique. Necessitatibus, iusto
           <span
   className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
@@ -193,7 +193,7 @@ const PlayerTestimonials = () => {
   }}
   style={{ cursor: "pointer", color: "#007bff" }}
 >
-  continue reading...
+  Full Letter...
 </span>
         </i>
       </span>
@@ -217,24 +217,41 @@ const PlayerTestimonials = () => {
          <div className="bg-white">
         <div className="modal-header">
           <p className=" small"></p>
-          <button className="close-btn text-black mt-1 py-0" 
+          <button className="close-btn text-black py-0 hover-opacity"  
           onClick={() => setIsModalOpen(false)}
-          style={{textShadow:'.5px .5px 1px'}}>×</button>
+          style={{textShadow:'.5px .5px 1px', fontSize:'12px'}}>X</button>
         </div>
         <img src={selectedLetter.image} alt={selectedLetter.name} className="w3-image mt-2 shadow border" />
   
         <div className="modal-footer d-flex justify-content-between w3-padding-16 w3-padding-large">
-  <div className="text-start">
-    <p className="fw-bold mb-1">CONTACT INFORMATION</p>
-    <p className="text-black fw-bold">{selectedLetter.name}</p>
+        <div 
+  className="w3-round w3-white w3-margin-top" 
+  style={{
+    fontFamily: 'Raleway',
+    textAlign: 'left',   // Ensures all text aligns left
+    marginLeft: '0',     // Moves the div to the left margin
+    padding: '10px',     // Adds spacing inside the card
+    maxWidth: '320px'    // Keeps it compact like a business card
+  }}
+>
+  <p className="fw-light small mb-2">
+    <i>Feel free to contact me with questions, or reach out if I can be of assistance.</i>
+  </p>
+  <p className="fw-bold text-emphasis-primary mb-1">{selectedLetter.name}</p>
+
+  <div className="small text-dark">
+    <p className="mb-1">
+      📞 <a href={`tel:${selectedLetter.phone}`} className="text-decoration-none text-dark">{selectedLetter.phone}</a>
+    </p>
+    <p className="mb-0">
+      ✉️ <a href={`mailto:${selectedLetter.email}`} className="text-decoration-none text-dark">{selectedLetter.email}</a>
+    </p>
   </div>
-  <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-  </div>
-  <button className="btn close-btn text-black mt-0 text-align-right my-3" onClick={() => setIsModalOpen(false)}
-    style={{fontSize:'10px', fontWeight:'500'}}>close X</button>
+</div>
 
-
-
+</div>
+  <button className="btn close-btn text-black mt-0 text-align-right my-3 shadow hover-opacity" onClick={() => setIsModalOpen(false)}
+    style={{fontSize:'11px', fontWeight:'700'}}>close X</button>
       </div>
     </div>
     </div>
