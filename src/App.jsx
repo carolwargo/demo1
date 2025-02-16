@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter> 
+      <BrowserRouter basename='demo1'> 
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>  
