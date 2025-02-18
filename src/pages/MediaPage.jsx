@@ -63,19 +63,15 @@ export default function FloatingActionButtonZoom() {
 
 
   return (
-<div>
+<div className='w3-black '>
   <div className='w3-black text-center'>
     <div className=' w3-padding-top-24'>
-    <div
-          className=" w3-black w3-center"
-          id="myNavbar"
-        >
+    <div className=" w3-black w3-center" id="myNavbar">
           <div className="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" className="w3-bar-item w3-button w3-center">
          <b><i className='fas fa-arrow-left'></i>   BACK TO HOME</b> 
             </a>
           </div>
-          
         </div>
 <h1
               className=" w3-animate-left"
@@ -89,7 +85,7 @@ export default function FloatingActionButtonZoom() {
             <img
               src={ClayCover3}
               alt="boy"
-              className="w3-image"
+              className="w3-image w3-hide-small w3-hide-medium"
               width="50%"
            
             />
@@ -475,8 +471,17 @@ export default function FloatingActionButtonZoom() {
     </div>
 )}
 </InView>
+<div className=" w3-black w3-center" id="myNavbar">
+          <div className="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" className="w3-bar-item w3-button w3-center">
+         <b><i className='fas fa-arrow-left'></i>   BACK TO HOME</b> 
+            </a>
+          </div>
+        </div>
     </div>
+    <div className='container'>
     <PlayerFooter />
+    </div>
     </div>
     </div>
   );
