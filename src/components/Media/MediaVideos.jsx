@@ -7,7 +7,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { InView } from "react-intersection-observer";
-import ClaySmall from '../../assets/images/Profiles/ClaySmall.png';
 import Offense from '../../assets/images/Video/Offense.png';
 import Defense from '../../assets/images/Video/Defense.png';
 import MLB from '../../assets/images/Video/MLB.png';
@@ -76,7 +75,7 @@ export default function FloatingActionButtonZoom() {
             <div className="col-sm-12 col-md-8 col-lg-8"
       >
       
-<video src={ClaySmall} controls className="w-100" style={{ height:'370px'}}>
+<video controls className="w-100" style={{ height:'370px'}}>
 <div className="play-icon">
     <i className="fa fa-play"></i>
   </div>
@@ -179,78 +178,7 @@ export default function FloatingActionButtonZoom() {
       </p>
     </div>
   </div>
-
-  <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
-
-  {/* HITTING Row 2 */}
-<div className="row d-flex justify-content-between align-items-center mt-3">
-  <div className="col-6 col-md-6 col-lg-6 position-relative">
-    <div className='image-container'>
-      <img
-        src={Defense}
-        alt="small"
-        className="img-fluid shadow w3-grayscale-max"
-      />
-          <div className="image-mask"></div>
-          </div>
-            <div className="play-icon">
-          <i className="fa fa-play"></i>
-        </div>
-    </div>
-    <div className="col-6 col-md-6 col-lg-6 text-start">
-      <Link className="link-light link-offset-2-hover small" to={"/demo2"}>
-            <p className="py-0 mb-0 text-white "
-      style={{ textShadow:'1px 1px 2px #fff'}}>
-          BP <span className="fw-light">(Live At-Bats)</span>
-        </p>
-      </Link>
-      <p className="small text-white-50" style={{ lineHeight: "18px" }}>
-        Lorem ipsum dolor. <br />{" "}
-        <span className="w3-text-grey small">Jan.1,2025</span>
-      </p>
-    </div>
-  </div>
-
-  <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
-
-    {/* HITTING Row 3 */}
-<div className="row d-flex justify-content-between align-items-center">
-  <div className="col-6 col-md-6 col-lg-6 position-relative">
-    <div className='image-container'>
-      <img
-        src={MLB}
-        alt="small"
-        className="img-fluid shadow-lg w3-grayscale-max"
-      />
-      <div className="image-mask"></div>
-      </div>
-        <div className="play-icon">
-    <i className="fa fa-play"></i>
-  </div>
-    </div>
-    <div className="col-6 col-md-6 col-lg-6 text-start">
-      <Link className="link-light link-offset-2-hover small" to={"/demo3"}>
-            <p className="py-0 mb-0 text-white "
-      style={{ textShadow:'1px 1px 2px #fff'}}>LIVE (in-game)</p>
-      </Link>
-      <p className="small text-white-50" style={{ lineHeight: "18px" }}>
-        Lorem ipsum dolor. <br />{" "}
-        <span className="w3-text-grey small">Jan.1,2025</span>
-      </p>
-    </div>
-  </div>
 </div>
-
 </TabPanel>
 {/**HITTING PANEL START */}
 
@@ -349,61 +277,6 @@ export default function FloatingActionButtonZoom() {
      <Link className=' link-light link-offset-2-hover small' to={'/demo'}>
       <p className="py-0 mb-0 text-white "
       style={{ textShadow:'1px 1px 1px '}}>VS. OPPONENT</p>
-      </Link>
-       <p className="small text-white-50" style={{ lineHeight:'18px'}}>Lorem ipsum dolor.  <br/> <span className="w3-text-grey small">Jan.1,2025</span></p> 
-       </div>
-  </div>
-  <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
-
-
-
-<div className="row d-flex justify-content-between align-items-center ">
-  <div className="col-6 col-md-6 col-lg-6 position-relative">
-    <div className='image-container'>
-      <img src={Defense} alt="small" className=' img-fluid shadow  w3-grayscale-max' />
-      <div className="image-mask"></div>
-      </div> 
-            <div className="play-icon">
-          <i className="fa fa-play"></i>
-        </div>
-    </div>
-
-
-    <div className="col-6 col-md-6 col-lg-6 text-start">
-     <Link className=' link-light link-offset-2-hover small' to={'/demo'}>
-      <p className="py-0 mb-0 text-white "
-      style={{ textShadow:'1px 1px 1px '}}>@ OPPONENT</p>
-      </Link>
-       <p className="small text-white-50" style={{ lineHeight:'18px'}}>Lorem ipsum dolor.  <br/> <span className="w3-text-grey small">Jan.1,2025</span></p> 
-       </div>
-  </div>
-   <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
-
-
-<div className="row d-flex justify-content-between align-items-center">
-  <div className="col-6 col-md-6 col-lg-6 position-relative">
-    <div className='image-container'>
-      <img src={MLB} alt="small" className=' img-fluid shadow-lg w3-grayscale-max' />
-      <div className="image-mask"></div>
-      </div>
-            <div className="play-icon">
-          <i className="fa fa-play"></i>
-        </div>
-    </div>
-    <div className="col-6 col-md-6 col-lg-6 text-start">
-     <Link className=' link-light link-offset-2-hover small' to={'/demo'}>
-      <p className="py-0 mb-0 text-white "
-      style={{ textShadow:'1px 1px 2px #fff'}}>VS. OPPONENT</p>
       </Link>
        <p className="small text-white-50" style={{ lineHeight:'18px'}}>Lorem ipsum dolor.  <br/> <span className="w3-text-grey small">Jan.1,2025</span></p> 
        </div>

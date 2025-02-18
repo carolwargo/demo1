@@ -212,7 +212,7 @@ footer .social-icons a {
 
 
  
-<div className="text-center ">
+<div className="text-center w3-black">
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
           <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-48  
