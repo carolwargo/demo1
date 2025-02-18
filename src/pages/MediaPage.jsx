@@ -14,6 +14,7 @@ import ClayCover3 from '../assets/images/Profiles/ClayCover3.png';
 //import ClaySmall from '../assets/images/Profiles/ClaySmall.png'; 
 import { Link } from 'react-router-dom';
 import PlayerFooter from '../components/Demo1/PlayerFooter';
+import Media3 from '../components/Demo1/PlayerMedia3';
 import '../styles/media.css';
 
 
@@ -64,6 +65,7 @@ export default function FloatingActionButtonZoom() {
 
   return (
 <div className='w3-black '>
+  <Media3/>
   <div className='w3-black text-center'>
     <div className=' w3-padding-top-24'>
     <div className=" w3-black w3-center" id="myNavbar">
@@ -118,11 +120,9 @@ export default function FloatingActionButtonZoom() {
       borderRight: '2px solid #181818', 
       background: 'linear-gradient(to bottom, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #181818, #111111, #000000)'}}
     >
-  {videoSrc ? (
-    <video src={videoSrc} controls className="w-100 text-secondary" style={{ minHeight: '400px', background: '#f8f9fa' }} />
-  ) : (
-    <p className="text-secondary">Select a video to view.</p>
-  )}
+ 
+    <video src={videoSrc} controls className="w-100 text-secondary" style={{ minHeight: '400px'}} />
+
 </div>
 
               </div>

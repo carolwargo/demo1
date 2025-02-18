@@ -4,7 +4,7 @@ import PlayerProfile from "../components/Demo1/PlayerProfile";
 import PlayerPerformance from "../components/Demo1/PlayerPerformance";
 import PlayerCards from "../components/Demo1/PlayerCards";
 import PlayerFooter from "../components/Demo1/PlayerFooter";
-import MediaComponent from "../components/Demo1/MediaComponent";
+import Media3 from "../components/Demo1/PlayerMedia3";
 import PlayerTestimonials from "../components/Demo1/PlayerTestimonials";
 import { RiHome6Line } from "react-icons/ri";
 import "../styles/demo.css";
@@ -138,13 +138,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                 className="demo1-player-testimonial"
                 id="demo1-player-testimonial"
               >
-                Testimonial Section
                 <PlayerTestimonials />
               </div>
 
               {/* Media Section */}
               <div className="demo1-media-component" id="demo1-media-component">
-                <MediaComponent />
+                <Media3 />
               </div>
 
               {/* Cards Contact Section*/}

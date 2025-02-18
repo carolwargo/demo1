@@ -107,9 +107,6 @@ footer a:hover {
     display: inline-block
 }
 
-footer .social-icons {
-   margin-left: 5rem;
-}
 
 footer .social-icons a {
     width: 30px;
@@ -294,16 +291,16 @@ footer .social-icons a {
   </div>
 </div>
 
-      <div className="container w3-padding-16 w3-margin-bottom">
+      <div className="container w3-hide-small w3-hide-medium w3-padding-16 w3-margin-top w3-margin-bottom">
       <div className="row d-flex justify-content-center align-items-center ">
-  <div className="col-md-8 col-sm-6 col-xs-12 small">
-  <h6>CONNECT WITH ME ON SOCIAL MEDIA: </h6>
+      <div className="col-lg-8 col-md-8 col-sm-12 small">
+  <h6>CONNECT THROUGH: </h6>
  
       </div>
 
-      <div className="col-md-4 col-sm-6 col-xs-12 small text-align-right"> 
-
-             <ul className="social-icons">
+      <div className="col-lg-4 col-md-4 col-sm-12"> 
+             <ul className="social-icons"
+             style={{marginLeft:'5rem'}}>
         <li><Link to="https://www.facebook.com/" className="globe"><i className="fas fa-globe"></i></Link></li>
           <li><Link to="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></Link></li>
           <li><Link to="https://twitter.com/" className="twitter"><i className="fab fa-x-twitter"></i></Link></li>
@@ -331,6 +328,16 @@ footer .social-icons a {
       </div>
       </div>
   </div>
+  <div className="container-fluid w3-hide-large">
+  <h6 className=" text-center text-white">Connect on Social Media:</h6>
+  <ul className="social-icons"
+             >
+        <li><Link to="https://www.facebook.com/" className="globe"><i className="fas fa-globe"></i></Link></li>
+          <li><Link to="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></Link></li>
+          <li><Link to="https://twitter.com/" className="twitter"><i className="fab fa-x-twitter"></i></Link></li>
+          <li><Link to="https://www.instagram.com/" className="instagram"><i className="fab fa-instagram-square"></i></Link></li>
+        </ul>                     
+</div>
 
 <div className="container w3-padding-top-48 w3-margin-top w3-margin-bottom">
   <p className="copyright-text text-center small">Copyright &copy; 2024 All Rights Reserved by

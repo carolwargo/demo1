@@ -391,7 +391,7 @@ const PlayerCards = () => {
 
   {/* Text Content */}
   <div
-    className="container w3-padding-large text-white"
+    className="container-fluid text-white"
     style={{
       position: 'relative', // Ensure this content isn't affected by grayscale
       zIndex: 2,
