@@ -51,10 +51,10 @@ const PlayerFooter = () => {
 }
 
 footer {
-    padding: 45px 0 20px;
+    padding: 25px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: #737373;
+    color: #393939;
 }
 
 footer hr {
@@ -93,13 +93,14 @@ footer a:hover {
 }
 
 .footer-links a {
-    color: #737373
+    color: #545454;
+    text-decoration: underline;
 }
 
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: #3366cc;
+    color:  #e6e5e5;
     text-decoration: none;
 }
 
@@ -115,7 +116,7 @@ footer .social-icons a {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #33353d
+    background-color: #545454
 }
 
 .copyright-text {
@@ -153,7 +154,7 @@ footer .social-icons a {
 
 
 .social-icons a {
-    background-color: gray;
+    background-color: #545454;
     color: white;
     font-size: 16px;
     display: inline-block;
@@ -209,40 +210,40 @@ footer .social-icons a {
 
 
  
-<div className="text-center w3-black">
+<div className="text-center bg-secondary">
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
-          <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-48  
+          <div ref={ref} className={`w3-content w3-justify w3-padding-16  
             ${inView ? "animate-fade-in" : ""}`} 
         id="player-footer">
+          <div className="container w3-padding-large">
 <footer>
   <div className="container">
-    <div className="row">
-      <div className="col-sm-12 col-md-6 px-3">
-        <h6>THANK YOU FOR VIEWING </h6>
-        <p className="text-justify" style={{paddingRight:'2rem'}}>  Feedback is welcome - Feel free to reach out to me directly, and connect with me on social media.
+    <div className="row justify-content-center align-items-center">
+      <div className="col-sm-12 col-md-6 px-2">
+        <h6 className="fw-bolder">THANK YOU FOR VIEWING </h6>
+        <p className="text-justify" style={{paddingRight:'1rem', color:'#545454'}}>  Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
        <br /> To communicate with a 3rd party when necessary, please contact <Link
-                className="link-light opacity-60 small"
-                style={{ cursor: "pointer"}}
+                className="footer-links small text-decoration-underline w3-hover-text-light-gray"
+                style={{ cursor: "pointer", color:'#545454'}}
                 onClick={handleOpen}
               >
-               COACH JOE DOE
+              <i className="fas fa-address-book"></i> <b>COACH JOE DOE</b>
               </Link>.</p>
       </div>
-
 
 
       <div className="col-xs-6 col-md-3">
         <h6>Contact Info</h6>
         <ul className="footer-links">
           <li> 
-            <i className="fas fa-phone"></i> {""} <a href="tel:1234567890">
-              <span>(123) 456-7890</span>
+           <a href="tel:1234567890">
+           <i className="fas fa-phone text-decoration-none" style={{marginRight:'5px'}}></i><span>(123) 456-7890</span>
               </a>
               </li>
-          <li> <i className="fas fa-envelope"></i> {""} <a href="mailto:mail@gmail.com">  <span>players-email@mail.com</span></a></li>
-          <li> <i className="fas fa-globe"></i> {""} <a href="https://carolwargo.github.io/recruit-demos/demo1"> <span>joebaseball.com</span></a></li>
-          <li> <i className="fas fa-location-pin"></i> {""} <a href="https://carolwargo.github.io/recruit-demos/demo1"> <span>123 Any St. Town, ST. 54321</span></a></li>
+          <li>  <a href="mailto:mail@gmail.com"> <i className="fas fa-envelope text-decoration-none" style={{marginRight:'5px'}}></i><span>players-email@mail.com</span></a></li>
+          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1">  <i className="fas fa-globe text-decoration-none" style={{marginRight:'5px'}}></i><span>joebaseball.com</span></a></li>
+          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1"> <i className="fas fa-location-pin text-decoration-none" style={{marginRight:'5px'}}></i><span>YourTown, ST. 12345</span></a></li>
         </ul>
       </div>
 
@@ -250,40 +251,44 @@ footer .social-icons a {
       <div className="col-xs-6 col-md-3">
         <h6>Links & Loads</h6>
         <ul className="footer-links">
-        <li> < FaFileDownload/> 
+        <li> 
         <a 
                   id="download"
                   download
                  href={PlayerResume} >
+                  < FaFileDownload/> {""}
         <span className="text-decoration-none"
-         style={{marginLeft:'5px'}}>Resume</span>
+         style={{marginLeft:'5px'}}>Player Cheatsheet</span>
               </a>
               </li>
-              <li> < FaFileDownload/> 
+              <li> 
         <a 
                   id="download"
                   download
                  href={PlayerPerformance} >
+                  < FaFileDownload/> {""}
         <span className="text-decoration-none"
-         style={{marginLeft:'5px'}}>Performance</span>
+         style={{marginLeft:'5px'}}>Performance Download</span>
               </a>
               </li>
-              <li> < FaFileDownload/> 
+              <li>
         <a 
                   id="download"
                   download
                  href={Transcripts} >
+                    < FaFileDownload/> {""}
         <span className="text-decoration-none"
-        style={{marginLeft:'5px'}}>Transcripts</span>
+        style={{marginLeft:'5px'}}>Unofficial Transcripts</span>
               </a>
               </li>
-              <li> < FaFileDownload/> 
+              <li> 
         <a 
                   id="download"
                   download
                  href={Calendar} >
+                    < FaFileDownload/> {""}
         <span className="text-decoration-none"
-        style={{marginLeft:'5px'}}>Schedules</span>
+        style={{marginLeft:'5px'}}>Game Schedules</span>
               </a>
               </li>
         </ul>
@@ -340,12 +345,14 @@ footer .social-icons a {
 </div>
 
 <div className="container w3-padding-top-48 w3-margin-top w3-margin-bottom">
-  <p className="copyright-text text-center small">Copyright &copy; 2024 All Rights Reserved by
-         {""} <Link to='/' className="link-light opacity-65">CONSCRIBE.COM</Link>.
+  <p className="copyright-text text-center small"
+  style={{color:'#545454'}}>Copyright &copy; 2024 All Rights Reserved by
+         {""} <Link to='/' className=" w3-hover-text-light-gray" style={{color:'#545454'}}>CONSCRIBE.COM</Link>.
         </p>
 </div>
 </footer>
           {/* End Contact Section */}
+          </div>
         </div>
           )}
     </InView>

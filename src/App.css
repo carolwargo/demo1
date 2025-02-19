@@ -16,6 +16,13 @@
   
 }
 
+.home-page {
+  background-color: black ;
+}
+
+.homepage h1 {
+  color: #e6e5e5;
+} 
 
 /*Hover Zoom Images*/
 /* Define zoom effect with smooth transition */

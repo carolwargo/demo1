@@ -59,7 +59,7 @@ export default function FloatingActionButtonZoom() {
             <div className="col-sm-12 col-md-8 col-lg-8"
       >
       
-<video src={videoSrc} controls className="w-100" style={{ height:'370px'}}>
+<video src={videoSrc} controls className="w-100" style={{ minHeight: "300px" }}>
 <div className="play-icon">
     <i className="fa fa-play"></i>
   </div>
@@ -67,6 +67,7 @@ export default function FloatingActionButtonZoom() {
               </div>
           
             <div className="col-sm-12 col-md-4 col-lg-4"
+            style={{ minHeight: "300px" }}
             >
              
             <Box

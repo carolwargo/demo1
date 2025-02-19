@@ -8,7 +8,7 @@ const PlayerProfile = () => {
 <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div ref={ref} 
-            className={`w3-content w3-justify w3-text-grey w3-padding-16 bg-black
+            className={`w3-content w3-justify w3-text-grey w3-padding-24 bg-black
                ${inView ? "animate-fade-in" : ""}`}
             id="overview"
         >

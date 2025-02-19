@@ -61,7 +61,7 @@ const PlayerCards = () => {
              {({ inView, ref }) => (
                <div
                  ref={ref}
-                 className={`w3-content w3-justify w3-text-light w3-padding-16 
+                 className={`w3-content w3-justify w3-text-light w3-padding-24 
                ${inView ? "animate-fade-in" : ""}`}
                  id="cards"
                >
@@ -127,7 +127,7 @@ const PlayerCards = () => {
         <b>ST. MARYS</b> <br />{' '}
         <span style={{fontSize:'24px', marginTop:'0px'}}>High School</span>
       </h4>
-      <h6 className="fw-bold my-4"
+      <h6 className="fw-bold mt-3"
         style={{
           color: '#8ecdf8',
           textShadow: '1px 1px 2px black',
@@ -136,6 +136,13 @@ const PlayerCards = () => {
         SMAACC <br />
          State Ranking #1
        </h6>
+       <h6 className="fw-bold mb-4"
+        style={{
+          color: '#8ecdf8',
+          textShadow: '1px 1px 2px black',
+        }}
+      >
+         <span  style={{fontWeight:'400', marginTop:'2px'}}><a className='link-light text-decoration-underline w3-hover-opacity' href="/">Coach Joe Jock</a> </span></h6>
        <div>
         <p
           className="small mb-2"
@@ -267,15 +274,22 @@ const PlayerCards = () => {
         <b>DIRTBAGS</b> <br />{' '}
         <span style={{fontSize:'24px', marginTop:'0px'}}>Baseball</span>
       </h4>
-      <h6 className="fw-bold my-4"
+      <h6 className="fw-bold mt-3"
         style={{
           color: '#8ecdf8',
           textShadow: '1px 1px 2px black',
         }}
       >
          All-Blacks <br />
-         National Ranking #1
-      </h6>
+         National Ranking #1</h6>
+         <h6 className="fw-bold mb-4"
+        style={{
+          color: '#8ecdf8',
+          textShadow: '1px 1px 2px black',
+        }}
+      >
+         <span  style={{fontWeight:'400', marginTop:'2px'}}><a className='link-light text-decoration-underline w3-hover-opacity' href="/">Coach Joe Jock</a> </span></h6>
+         
       <div>
         <p
           className="small mb-2"
