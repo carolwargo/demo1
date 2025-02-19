@@ -11,7 +11,6 @@ import Offense from '../assets/images/Video/Offense.png';
 import Defense from '../assets/images/Video/Defense.png';
 import MLB from '../assets/images/Video/MLB.png';
 import ClayCover3 from '../assets/images/Profiles/ClayCover3.png';
-//import ClaySmall from '../assets/images/Profiles/ClaySmall.png'; 
 import { Link } from 'react-router-dom';
 import PlayerFooter from '../components/Demo1/PlayerFooter';
 import Media3 from '../components/Demo1/PlayerMedia3';

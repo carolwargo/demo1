@@ -1,11 +1,12 @@
-import ClaySmall from "../assets/images/Profiles/ClaySmall.png";
-import ClayCover3 from "../assets/images/Profiles/ClayCover3.png";
+
 import PlayerProfile from "../components/Demo1/PlayerProfile";
 import PlayerPerformance from "../components/Demo1/PlayerPerformance";
 import PlayerCards from "../components/Demo1/PlayerCards";
 import PlayerFooter from "../components/Demo1/PlayerFooter";
 import Media3 from "../components/Demo1/PlayerMedia3";
 import PlayerTestimonials from "../components/Demo1/PlayerTestimonials";
+import ClaySmall from "../assets/images/Profiles/ClaySmall.png";
+import ClayCover3 from "../assets/images/Profiles/ClayCover3.png";
 import { RiHome6Line } from "react-icons/ri";
 import "../styles/demo.css";
 
