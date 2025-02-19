@@ -15,7 +15,10 @@ export default function MuiTable() {
   };
 
   return (
-    <TableContainer component={Paper} sx={{ maxWidth: '100%', width: 500 }}>
+
+    <div className=' w3-black'>
+<div className='container w3-padding-64 w3-margin-top'>
+    <TableContainer  component={Paper} sx={{ maxWidth: '100%', width: 500 }}>
       <Table aria-label="custom pagination table">
         <TableHead>
           <TableRow>
@@ -47,6 +50,8 @@ export default function MuiTable() {
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
     </TableContainer>
+    </div>
+    </div>
   );
 }
 
