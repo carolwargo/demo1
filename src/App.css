@@ -132,10 +132,10 @@
 
 /*start Header glow shadows*/
 .pink-button {
-    boxShadow: 0px 0px 2px 1px #fa52ce;
+    box-shadow: 0px 0px 2px 1px #fa52ce;
     cursor: pointer;
     color: white;
-    backgroundImage: linear-gradient(to right, #f64b65 , #e41277);
+    background-image: linear-gradient(to right, #f64b65 , #e41277);
     transition: 'all 0.4s ease-in-out';
     color: #d32c9a, #d32c9a;
 }
