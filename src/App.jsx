@@ -21,6 +21,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           
           {/* Use Suspense for lazy-loaded MediaVideo */}
+          {/**npm install @babel/core gensync-utils */}
+          {/**npm install @vitejs/plugin-react */}
           <Route path="/media" element={
             <Suspense fallback={<div>Loading...</div>}>
               <MediaVideo />
