@@ -67,7 +67,7 @@ footer hr.small {
 }
 
 footer h6 {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -93,7 +93,7 @@ footer a:hover {
 }
 
 .footer-links a {
-    color: #545454;
+    color: #797979;
     text-decoration: underline;
 }
 
@@ -116,7 +116,7 @@ footer .social-icons a {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #545454
+    background-color: #797979
 }
 
 .copyright-text {
@@ -172,7 +172,7 @@ footer .social-icons a {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: #29aafe
 }
 
@@ -210,7 +210,7 @@ footer .social-icons a {
 
 
  
-<div className="text-center bg-secondary">
+<div className="text-center bg-black">
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
           <div ref={ref} className={`w3-content w3-justify w3-padding-16  
@@ -222,13 +222,13 @@ footer .social-icons a {
     <div className="row justify-content-center align-items-center">
       <div className="col-sm-12 col-md-6 px-2">
         <h6 className="fw-bolder">THANK YOU FOR VIEWING </h6>
-        <p className="text-justify" style={{paddingRight:'1rem', color:'#545454'}}>  Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
+        <p className="text-justify" style={{paddingRight:'1rem', color:'#797979'}}>  Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
        <br /> To communicate with a 3rd party when necessary, please contact <Link
                 className="footer-links small text-decoration-underline w3-hover-text-light-gray"
-                style={{ cursor: "pointer", color:'#545454'}}
+                style={{ cursor: "pointer", color:'#797979'}}
                 onClick={handleOpen}
               >
-              <i className="fas fa-address-book"></i> <b>COACH JOE DOE</b>
+              <i className="fas fa-address-book text-light"></i> <b>COACH JOE DOE</b>
               </Link>.</p>
       </div>
 
@@ -238,12 +238,12 @@ footer .social-icons a {
         <ul className="footer-links">
           <li> 
            <a href="tel:1234567890">
-           <i className="fas fa-phone text-decoration-none" style={{marginRight:'5px'}}></i><span>(123) 456-7890</span>
+           <i className="fas fa-phone text-decoration-none text-light" style={{marginRight:'5px'}}></i><span>(123) 456-7890</span>
               </a>
               </li>
-          <li>  <a href="mailto:mail@gmail.com"> <i className="fas fa-envelope text-decoration-none" style={{marginRight:'5px'}}></i><span>players-email@mail.com</span></a></li>
-          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1">  <i className="fas fa-globe text-decoration-none" style={{marginRight:'5px'}}></i><span>joebaseball.com</span></a></li>
-          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1"> <i className="fas fa-location-pin text-decoration-none" style={{marginRight:'5px'}}></i><span>YourTown, ST. 12345</span></a></li>
+          <li>  <a href="mailto:mail@gmail.com"> <i className="fas fa-envelope text-decoration-none text-light" style={{marginRight:'5px'}}></i><span>players-email@mail.com</span></a></li>
+          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1">  <i className="fas fa-globe text-decoration-none text-light" style={{marginRight:'5px'}}></i><span>joebaseball.com</span></a></li>
+          <li> <a href="https://carolwargo.github.io/recruit-demos/demo1"> <i className="fas fa-location-pin text-decoration-none text-light" style={{marginRight:'5px'}}></i><span>YourTown, ST. 12345</span></a></li>
         </ul>
       </div>
 
@@ -256,7 +256,7 @@ footer .social-icons a {
                   id="download"
                   download
                  href={PlayerResume} >
-                  < FaFileDownload/> {""}
+                  < FaFileDownload className=" text-light"/> {""}
         <span className="text-decoration-none"
          style={{marginLeft:'5px'}}>Player Cheatsheet</span>
               </a>
@@ -266,7 +266,7 @@ footer .social-icons a {
                   id="download"
                   download
                  href={PlayerPerformance} >
-                  < FaFileDownload/> {""}
+                  < FaFileDownload className=" text-light"/> {""}
         <span className="text-decoration-none"
          style={{marginLeft:'5px'}}>Performance Download</span>
               </a>
@@ -276,7 +276,7 @@ footer .social-icons a {
                   id="download"
                   download
                  href={Transcripts} >
-                    < FaFileDownload/> {""}
+                    < FaFileDownload className=" text-light"/> {""}
         <span className="text-decoration-none"
         style={{marginLeft:'5px'}}>Unofficial Transcripts</span>
               </a>
@@ -286,7 +286,7 @@ footer .social-icons a {
                   id="download"
                   download
                  href={Calendar} >
-                    < FaFileDownload/> {""}
+                    < FaFileDownload className=" text-light"/> {""}
         <span className="text-decoration-none"
         style={{marginLeft:'5px'}}>Game Schedules</span>
               </a>
@@ -346,8 +346,8 @@ footer .social-icons a {
 
 <div className="container w3-padding-top-48 w3-margin-top w3-margin-bottom">
   <p className="copyright-text text-center small"
-  style={{color:'#545454'}}>Copyright &copy; 2024 All Rights Reserved by
-         {""} <Link to='/' className=" w3-hover-text-light-gray" style={{color:'#545454'}}>CONSCRIBE.COM</Link>.
+  style={{color:'#797979'}}>Copyright &copy; 2024 All Rights Reserved by
+         {""} <Link to='/' className="text-light text-decoration-underline w3-hover-opacity" style={{color:'#797979'}}>CONSCRIBE.COM</Link>.
         </p>
 </div>
 </footer>

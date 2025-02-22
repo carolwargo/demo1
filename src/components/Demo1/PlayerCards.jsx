@@ -136,7 +136,7 @@ const PlayerCards = () => {
         SMAACC <br />
          State Ranking #1
        </h6>
-       <h6 className="fw-bold mb-4"
+       <h6 className="fw-bold mb-2"
         style={{
           color: '#8ecdf8',
           textShadow: '1px 1px 2px black',
@@ -145,7 +145,7 @@ const PlayerCards = () => {
          <span  style={{fontWeight:'400', marginTop:'2px'}}><a className='link-light text-decoration-underline w3-hover-opacity' href="/">Coach Joe Jock</a> </span></h6>
        <div>
         <p
-          className="small mb-2"
+          className="small mb-1"
           style={{
             color: '#8ecdf8',
             textShadow: '1px 1px 2px black',
@@ -153,6 +153,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-location-pin"></i>{' '}
           <Link
+          className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -163,7 +164,7 @@ const PlayerCards = () => {
           </Link>
         </p>
         <p
-            className="small mb-2"
+            className="small mb-1"
           style={{
             color: '#8ecdf8',
             textShadow: '1px 1px 2px black',
@@ -171,7 +172,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-video-camera"></i>{' '}
           <Link
-            className="mt-2"
+            className="mt-2 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -191,7 +192,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-globe mr-2"></i>{' '}
           <Link
-            className="mt-2"
+            className="mt-2 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -206,13 +207,13 @@ const PlayerCards = () => {
 <div className="tags mt-0 mb-2">
   <footer className="tags-footer">
     <Link to="https://www.facebook.com/S.Zain.Asif/">
-      <i className="fab fa-facebook"></i>
+      <i className="fab fa-facebook w3-hover-opacity"></i>
     </Link>
     <Link to="https://www.instagram.com/zain._.asif/">
-      <i className="fab fa-instagram"></i>
+      <i className="fab fa-instagram w3-hover-opacity"></i>
     </Link>
     <Link to="https://twitter.com/comeflywithme92">
-      <i className="fab fa-twitter"></i>
+      <i className="fab fa-twitter w3-hover-opacity"></i>
     </Link>
   </footer>
 </div>
@@ -282,7 +283,7 @@ const PlayerCards = () => {
       >
          All-Blacks <br />
          National Ranking #1</h6>
-         <h6 className="fw-bold mb-4"
+         <h6 className="fw-bold mb-2"
         style={{
           color: '#8ecdf8',
           textShadow: '1px 1px 2px black',
@@ -292,7 +293,7 @@ const PlayerCards = () => {
          
       <div>
         <p
-          className="small mb-2"
+          className="small mb-1"
           style={{
             color: '#8ecdf8',
             textShadow: '1px 1px 2px black',
@@ -300,6 +301,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-location-pin"></i>{' '}
           <Link
+               className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -310,7 +312,7 @@ const PlayerCards = () => {
           </Link>
         </p>
         <p
-            className="small mb-2"
+            className="small mb-1"
           style={{
             color: '#8ecdf8',
             textShadow: '1px 1px 2px black',
@@ -318,7 +320,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-video-camera"></i>{' '}
           <Link
-            className="mt-2"
+             className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -336,9 +338,9 @@ const PlayerCards = () => {
             textShadow: '1px 1px 2px black',
           }}
         >
-          <i className="fas fa-globe mr-2"></i>{' '}
+          <i className="fas fa-globe"></i>{' '}
           <Link
-            className="mt-2"
+           className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -353,13 +355,13 @@ const PlayerCards = () => {
 <div className="tags mt-0 mb-2">
   <footer className="tags-footer">
     <Link to="https://www.facebook.com/S.Zain.Asif/">
-      <i className="fab fa-facebook"></i>
+      <i className="fab fa-facebook w3-hover-opacity"></i>
     </Link>
     <Link to="https://www.instagram.com/zain._.asif/">
-      <i className="fab fa-instagram"></i>
+      <i className="fab fa-instagram w3-hover-opacity"></i>
     </Link>
     <Link to="https://twitter.com/comeflywithme92">
-      <i className="fab fa-twitter"></i>
+      <i className="fab fa-twitter w3-hover-opacity"></i>
     </Link>
   </footer>
 </div>
@@ -399,7 +401,7 @@ const PlayerCards = () => {
       width: '100%',
       height: '25rem',
       backgroundColor: 'rgba(0, 0, 0, 0.6)',
-      zIndex: 1, // Ensure mask is above background but below text
+      zIndex: -4, // Ensure mask is above background but below text
     }}
   ></div>
 
@@ -408,7 +410,7 @@ const PlayerCards = () => {
     className="container-fluid text-white"
     style={{
       position: 'relative', // Ensure this content isn't affected by grayscale
-      zIndex: 2,
+      zIndex: 4,
     }}
   >
     <div className="card-body w3-padding-24">
@@ -431,7 +433,7 @@ const PlayerCards = () => {
       <img src={USALogo} alt="usa-logo" style={{ width: '55px', height: 'auto' }} />
       <p className="small my-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black' }}>
         <i className="fas fa-video-camera"></i>{' '}
-        <Link className="mt-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
+        <Link  className="mt-1 text-decoration-underline w3-hover-opacity" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
           Highlights
         </Link>
       </p>
@@ -444,7 +446,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-globe mr-2"></i>{' '}
           <Link
-            className="mt-1"
+             className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -460,7 +462,8 @@ const PlayerCards = () => {
       <img src={Big26} alt="26-logo" style={{ width: '55px', height: 'auto' }} />
       <p className="small my-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black' }}>
         <i className="fas fa-video-camera"></i>{' '}
-        <Link className="mt-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
+        <Link  className="mt-1 text-decoration-underline w3-hover-opacity" 
+        style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
           Highlights
         </Link>
       </p>
@@ -473,7 +476,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-globe mr-2"></i>{' '}
           <Link
-            className="mt-1"
+             className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -489,7 +492,8 @@ const PlayerCards = () => {
       <img src={Gatorade} alt="tx-logo" style={{ width: '55px', height: 'auto' }} />
       <p className="small my-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black' }}>
         <i className="fas fa-video-camera"></i>{' '}
-        <Link className="mt-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
+        <Link  className="mt-1 text-decoration-underline w3-hover-opacity" 
+        style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
           Highlights
         </Link>
       </p>
@@ -502,7 +506,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-globe mr-2"></i>{' '}
           <Link
-            className="mt-1"
+             className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',
@@ -519,7 +523,8 @@ const PlayerCards = () => {
 
       <p className="small my-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black' }}>
         <i className="fas fa-video-camera"></i>{' '}
-        <Link className="mt-1" style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
+        <Link  className="mt-1 text-decoration-underline w3-hover-opacity" 
+        style={{ color: '#8ecdf8', textShadow: '1px 1px 2px black', marginLeft: '5px' }}>
           Highlights
         </Link>
       </p>
@@ -532,7 +537,7 @@ const PlayerCards = () => {
         >
           <i className="fas fa-globe mr-2"></i>{' '}
           <Link
-            className="mt-1"
+            className="mt-1 text-decoration-underline w3-hover-opacity"
             style={{
               color: '#8ecdf8',
               textShadow: '1px 1px 2px black',

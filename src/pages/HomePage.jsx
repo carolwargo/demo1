@@ -25,7 +25,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 `}
       </style>
-      <div className="body w3-black" style={{ paddingTop: ".9rem" }}>
+      <div className="body w3-black" style={{ paddingTop: "4rem" }}>
         {/* Icon Bar (Sidebar - hidden on small screens) */}
         <nav className="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
           {/* Avatar image in top left corner */}
@@ -61,7 +61,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </nav>
       </div>
 
-      <div className="w3-black w3-center" style={{ paddingTop: "4rem" }}>
+      <div className="w3-black w3-center">
         {/* Page Content */}
 
         {/* Navbar for small & medium screens */}
@@ -101,10 +101,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
               className="w3-jumbo w3-animate-left"
               style={{ marginTop: "4rem" }}
             >
-              <span className="w3-hide-small">I&apos;m</span> Joe Baseball.
+              <span className="w3-hide-small">I&apos;m</span> Joe Athlete.
             </h1>
-            <p>
-              NCAA STUDENT-ATHLETE | 2024 HIGH SCHOOL BASEBALL | CATCHER RECRUIT
+            <p style={{letterSpacing: '6px'}} className="w3-text-light-grey w3-animate-zoom ">
+              STUDENT-ATHLETE  |  CLASS OF 2024  |  BASEBALL RECRUIT
             </p>
             <img
               src={ClaySmall}
