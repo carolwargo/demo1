@@ -12,7 +12,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'], // Common dependencies
-          pdf: ['react-pdf', 'pdfjs-dist'], // Heavy libraries
           ui: ['@mui/material', 'framer-motion'], // UI-related libraries
         }
       }
