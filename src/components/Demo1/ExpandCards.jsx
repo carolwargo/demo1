@@ -1,57 +1,80 @@
 import React from 'react';
 import styles from '../../styles/expandcards.module.css';
-import AllState from '../../assets/images/PlayerPosts/AllState.png';
-import Big26 from '../../assets/images/PlayerPosts/Big26.png';
-import Doubles from '../../assets/images/PlayerPosts/Doubles.png';
-import HR from '../../assets/images/PlayerPosts/HR.png';
-import Mid from '../../assets/images/PlayerPosts/Mid.png';
-import MVP from '../../assets/images/PlayerPosts/MVP.png';
+import State from '../../assets/images/Expand/State.png';
+import Conf from '../../assets/images/Expand/Conf.png';
+import Preseason from '../../assets/images/Expand/Preseason.png';
+import TeamMD from '../../assets/images/Expand/TeamMD.png';
+import B26 from '../../assets/images/Expand/B26.png';
+import NCAA from '../../assets/images/Expand/NCAA.png';
+//import SBC from '../../assets/images/Expand/SBC.png';
 
 const PlayerPosts = () => {
   const cards = [
-    { id: 'c1', icon: '1', title: 'All-Star', desc: 'Winter has so much to offer - creative activities', img: AllState },
-    { id: 'c2', icon: '2', title: 'Big 26', desc: 'Winter has so much to offer - creative activities', img: Big26 },
-    { id: 'c3', icon: '3', title: 'Doubles', desc: 'Winter has so much to offer - creative activities', img: Doubles },
-    { id: 'c4', icon: '4', title: 'Home Run', desc: 'Winter has so much to offer - creative activities', img: HR },
-    { id: 'c5', icon: '5', title: 'Mid Season', desc: 'Winter has so much to offer - creative activities', img: Mid },
-    { id: 'c6', icon: '6', title: 'MVP', desc: 'Winter has so much to offer - creative activities', img: MVP },
+    { id: 'c1', icon: '1', title: 'POST TITLE', img: State, link: 'https://x.com'},
+    { id: 'c2', icon: '2', title: 'POST TITLE', img: B26, link: 'https://x.com' },
+    { id: 'c3', icon: '3', title: 'POST TITLE', img: TeamMD , link: 'https://x.com'}, 
+    { id: 'c4', icon: '4', title: 'POST TITLE', img: NCAA, link: 'https://x.com' },
+    { id: 'c5', icon: '5', title: 'POST TITLE', img: Preseason, link: 'https://x.com' },
+    { id: 'c6', icon: '6', title: 'POST TITLE', img: Conf, link: 'https://x.com' },
   ];
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        {cards.map((card, index) => (
-          <React.Fragment key={card.id}>
-            <input
-              type="radio"
-              name="slide"
-              id={card.id}
-              defaultChecked={index === 0}
-              className={styles.input}
-            />
-            <label
-              htmlFor={card.id}
-              className={styles.card}
-              style={{
-                backgroundImage: `url(${card.img})`,
-              }}
-            >
-              <div className={styles.row}>
-                <div className={styles.icon}>{card.icon}</div>
-                <div className={styles.description}>
-                  <h4>{card.title}</h4>
-                  <p>{card.desc}</p>
-                </div>
-              </div>
-            </label>
-          </React.Fragment>
-        ))}
+    <div>
+      <div className="row">
+        {/* Left Column */}
+ 
+        {/* Right Column (Cards) */}
+        <div className="col-12 col-md-12">
+        <div className="container">
+              <h5 className="card-title">Player Posts</h5>
+              <p className="card-text">VIEW POST</p>
+            </div>
+          <div className={styles.wrapper}>
+            <div className={styles.container}>
+              {cards.map((card, index) => (
+                <React.Fragment key={card.id}>
+                  <input
+                    type="radio"
+                    name="slide"
+                    id={card.id}
+                    defaultChecked={index === 0}
+                    className={styles.input}
+                  />
+                  <label
+                    htmlFor={card.id}
+                    className={styles.card}
+                    style={{
+                      backgroundImage: `url(${card.img})`,
+                    }}
+                  >
+                    <div className={styles.row}>
+                      <div className={styles.icon}>{card.icon}</div>
+                      <div className={styles.description}>
+                        <h5>{card.title}</h5>
+                        <p>{card.desc}</p>
+                        <a
+      href={card.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w3-text-grey hover-zoom"
+    >
+      VIEW THIS POST
+    </a>
+                      </div>
+                    </div>
+                  </label>
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default PlayerPosts;
+
 
 
 

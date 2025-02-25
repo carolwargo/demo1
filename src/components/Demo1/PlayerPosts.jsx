@@ -71,7 +71,7 @@ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
 />
 <div id="tweet-container">
   <blockquote className="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/" 
+    <a href="https:/x.com/" 
  className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
