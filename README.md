@@ -1,6 +1,6 @@
-# React + Vite
+# Recruit Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [App](https://carolwargo.github.io/demo1/)
 
 Currently, two official plugins are available:
 
