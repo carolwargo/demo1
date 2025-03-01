@@ -193,7 +193,7 @@ text-align: center;
                   <div className="col-sm-12 col-md-6">
                     <div className="container">
                     <h6 className="fw-bolder">THANK YOU FOR VIEWING</h6>
-                    <p className=" text-uppercase" style={{ color: "#797979" }}>
+                    <p className=" upp" style={{ color: "#797979" }}>
                       Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
                     </p>
                     <p style={{color: "#797979" }}>
