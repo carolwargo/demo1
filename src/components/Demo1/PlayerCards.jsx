@@ -40,7 +40,6 @@ const PlayerCards = () => {
     color: black;
     width: 30px;
     height: 30px;
-    text-align: center;
     border-radius: 6px;
     display: inline-flex;
     align-items: center;

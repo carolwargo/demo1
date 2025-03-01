@@ -156,19 +156,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                   <div className="demo1-player-cards" id="demo1-player-cards">
                 <ExpandCards />
               </div>
-              </div>
-              </div>
-              </div>
-              {/* Footer */}
-              <div
+    {/* Footer */}
+    <div
                 className="demo1-player-downloads"
                 id="demo1-player-downloads"
               >
                 <PlayerFooter />
-             
-        
-          {/* END PAGE CONTENT */}
         </div>
+
+              </div>
+              </div>
+              </div>
+          
       </div>
     </div>
   );

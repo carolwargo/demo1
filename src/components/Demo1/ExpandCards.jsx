@@ -1,4 +1,5 @@
 import React from 'react';
+import { InView } from "react-intersection-observer";
 import styles from '../../styles/expandcards.module.css';
 import State from '../../assets/images/Expand/State.png';
 import Conf from '../../assets/images/Expand/Conf.png';
@@ -20,11 +21,16 @@ const PlayerPosts = () => {
 
   return (
     <div>
-      <div className="row">
-        {/* Left Column */}
- 
-        {/* Right Column (Cards) */}
-        <div className="col-12 col-md-12">
+      <div className="page-container justify-content-center"> 
+        {/* Page Content */}
+        <InView triggerOnce={true}>
+          {({ inView, ref }) => (
+            <div
+              ref={ref}
+              className={`w3-content w3-justify w3-text-grey w3-padding-32 
+               ${inView ? "animate-fade-in" : ""}`}
+              id="profile"
+            >
         <div className="container">
               <h5 className="card-title">Player Posts</h5>
               <p className="card-text">VIEW POST</p>
@@ -68,6 +74,9 @@ const PlayerPosts = () => {
             </div>
           </div>
         </div>
+          )}
+        </InView>
+
       </div>
     </div>
   );

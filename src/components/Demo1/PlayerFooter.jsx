@@ -50,21 +50,8 @@ const PlayerFooter = () => {
   cursor: pointer;
 }
 
-footer {
-    padding: 25px 0 20px;
-    font-size: 15px;
-    line-height: 24px;
-    color: #393939;
-}
 
-footer hr {
-    border-top-color: #bbb;
-    opacity: 0.5
-}
 
-footer hr.small {
-    margin: 20px 0
-}
 
 footer h6 {
     color: #ffffff;
@@ -113,37 +100,20 @@ footer .social-icons a {
     width: 30px;
     height: 30px;
     line-height: 30px;
-    margin-left: 6px;
-    margin-right: 0;
+text-align: center; 
     border-radius: 100%;
     background-color: #797979
+
 }
 
-.copyright-text {
-    margin: 0
-}
 
-@media (max-width:991px) {
-    footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
 
-@media (max-width:767px) {
-    footer {
-        padding-bottom: 0
-    }
-
-    footer .copyright-text,
-    footer .social-icons {
-        text-align: center
-    }
-}
 
 .social-icons {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none
+     
 }
 
 .social-icons li {
@@ -156,12 +126,11 @@ footer .social-icons a {
 .social-icons a {
     background-color: #545454;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     line-height: 44px;
     width: 32px;
     height: 32px;
-    text-align: center;
     margin-right: 8px;
     border-radius: 100%;
     -webkit-transition: all .2s linear;
@@ -180,9 +149,9 @@ footer .social-icons a {
     line-height: 34px;
     height: 34px;
     width: 34px;
-    font-size: 16px
+    font-size: 14px
 }
-
+//C
 .social-icons a.facebook:hover {
     background-color: #3b5998
 }
@@ -198,7 +167,7 @@ footer .social-icons a {
 .social-icons a.instagram:hover {
     background-color: #ea4c89
 }
-
+//C
 @media (max-width:767px) {
     .social-icons li.title {
         display: block;
@@ -210,28 +179,31 @@ footer .social-icons a {
 
 
  
-<div className="text-center bg-black">
+<div className="page-container">
+{/* Page Content */}
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
           <div ref={ref} className={`w3-content w3-justify w3-padding-16  
             ${inView ? "animate-fade-in" : ""}`} 
         id="player-footer">
-          <div className="container w3-padding-large">
+          <div className=" bg-black">
 <footer>
-  <div className="container">
-    <div className="row justify-content-center align-items-center">
-      <div className="col-sm-12 col-md-6 px-2">
-        <h6 className="fw-bolder">THANK YOU FOR VIEWING </h6>
-        <p className="text-justify" style={{paddingRight:'1rem', color:'#797979'}}>  Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
-       <br /> To communicate with a 3rd party when necessary, please contact <Link
-                className="footer-links small text-decoration-underline w3-hover-text-light-gray"
-                style={{ cursor: "pointer", color:'#797979'}}
-                onClick={handleOpen}
-              >
-              <i className="fas fa-address-book text-light"></i> <b>COACH JOE DOE</b>
-              </Link>.</p>
-      </div>
 
+                <div className="row justify-content-center align-items-center w-100">
+                  <div className="col-sm-12 col-md-6">
+                    <div className="container">
+                    <h6 className="fw-bolder">THANK YOU FOR VIEWING</h6>
+                    <p className=" text-uppercase" style={{ color: "#797979" }}>
+                      Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
+                    </p>
+                    <p style={{color: "#797979" }}>
+                      To communicate with a 3rd party when necessary, please contact{" "}
+                      <Link className="footer-links small text-decoration-underline w3-hover-text-light-gray" style={{ cursor: "pointer", color: "#797979" }} onClick={handleOpen}>
+                        <i className="fas fa-address-book text-light"></i> <b>COACH JOE DOE</b>
+                      </Link>.
+                    </p>
+                  </div>
+                  </div>
 
       <div className="col-xs-6 col-md-3">
         <h6>Contact Info</h6>
@@ -294,15 +266,14 @@ footer .social-icons a {
         </ul>
       </div>
   </div>
-</div>
 
-      <div className="container w3-hide-small w3-hide-medium w3-padding-16 w3-margin-top w3-margin-bottom">
+
+ {/**FOR LARGE SCREENS */}
+      <div className="container-fluid w3-hide-small w3-hide-medium w3-padding-16 w3-margin-top w3-margin-bottom">
       <div className="row d-flex justify-content-center align-items-center ">
       <div className="col-lg-8 col-md-8 col-sm-12 small">
   <h6>CONNECT THROUGH: </h6>
- 
       </div>
-
       <div className="col-lg-4 col-md-4 col-sm-12"> 
              <ul className="social-icons"
              style={{marginLeft:'5rem'}}>
@@ -310,31 +281,15 @@ footer .social-icons a {
           <li><Link to="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></Link></li>
           <li><Link to="https://twitter.com/" className="twitter"><i className="fab fa-x-twitter"></i></Link></li>
           <li><Link to="https://www.instagram.com/" className="instagram"><i className="fab fa-instagram-square"></i></Link></li>
-        </ul>
-        {/** 
-         <Link to="https://twitter.com/" className=" mx-1 my-0"
-            style={{ fontSize: "1.2rem" }}>
-            <span className="icon-hover-zoom"> 
-            <BsTwitterX /> </span></Link>
-             <Link to="https://www.instagram.com/" className=" mx-1 my-0"
-               style={{ fontSize: "1.3rem" }}>
-               <span className="icon-hover-zoom">
-              <FaSquareInstagram />
-          </span> 
-          </Link>
-          <Link to="https://www.instagram.com/" className=" mx-1 my-0"
-               style={{ fontSize: "1.3rem" }}>
-               <span className="icon-hover-zoom">
-               <FaSnapchatSquare />
-          </span> 
-          </Link>
-          */} 
-                          
+        </ul>             
       </div>
       </div>
   </div>
-  <div className="container-fluid w3-hide-large">
-  <h6 className=" text-center text-white">Connect on Social Media:</h6>
+
+
+  {/**FOR SMALL SCREENS */}
+  <div className="container w3-hide-large w3-margin-left">
+  <p className=" text-white">Connect on Social Media:</p>
   <ul className="social-icons"
              >
         <li><Link to="https://www.facebook.com/" className="globe"><i className="fas fa-globe"></i></Link></li>
@@ -351,7 +306,6 @@ footer .social-icons a {
         </p>
 </div>
 </footer>
-          {/* End Contact Section */}
           </div>
         </div>
           )}
@@ -376,8 +330,7 @@ footer .social-icons a {
     </div>
   </div>
 )}
-
-    </div>
+</ div>
     </div>
   );
 };
