@@ -183,25 +183,34 @@ text-align: center;
 {/* Page Content */}
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
-          <div ref={ref} className={`w3-content w3-justify w3-padding-16  
+          <div ref={ref} className={`w3-content w3-justify w3-padding-16 w3-margin-top  
             ${inView ? "animate-fade-in" : ""}`} 
         id="player-footer">
-          <div className=" bg-black">
+          <div className="">
 <footer>
 
-                <div className="row justify-content-center align-items-center w-100">
+         
+                <div className="row justify-content-center align-items-center mt-3">
+             
                   <div className="col-sm-12 col-md-6">
-                    <div className="container">
+                    <div style={{}} >
                     <h6 className="fw-bolder">THANK YOU FOR VIEWING</h6>
-                    <p className=" upp" style={{ color: "#797979" }}>
-                      Feedback is welcome. Feel free to reach out to me directly, and connect with me on social media.
-                    </p>
-                    <p style={{color: "#797979" }}>
-                      To communicate with a 3rd party when necessary, please contact{" "}
-                      <Link className="footer-links small text-decoration-underline w3-hover-text-light-gray" style={{ cursor: "pointer", color: "#797979" }} onClick={handleOpen}>
-                        <i className="fas fa-address-book text-light"></i> <b>COACH JOE DOE</b>
-                      </Link>.
-                    </p>
+                    <p className="" style={{ color: "#797979", paddingRight: "50px" }}>
+  Feedback is welcome. Feel free to reach out to me directly and connect with me on social media.
+</p>
+
+<p className="" style={{ color: "#797979", paddingRight: "50px" }}>
+  To communicate with a third-party when necessary, contact  
+  <i className="fas fa-address-book text-white mx-1"></i> 
+  <Link 
+    className="footer-links link-light small text-decoration-underline w3-hover-text-light-gray" 
+    style={{ cursor: "pointer", color: "#797979" }} 
+    onClick={handleOpen}
+  >
+    COACH JOE DOE
+  </Link>.
+</p>
+
                   </div>
                   </div>
 
@@ -228,7 +237,7 @@ text-align: center;
                   id="download"
                   download
                  href={PlayerResume} >
-                  < FaFileDownload className=" text-light"/> {""}
+                  < FaFileDownload className=" text-light"/>{""}
         <span className="text-decoration-none"
          style={{marginLeft:'5px'}}>Player Cheatsheet</span>
               </a>
@@ -238,7 +247,7 @@ text-align: center;
                   id="download"
                   download
                  href={PlayerPerformance} >
-                  < FaFileDownload className=" text-light"/> {""}
+                  < FaFileDownload className=" text-light"/>{""}
         <span className="text-decoration-none"
          style={{marginLeft:'5px'}}>Performance Download</span>
               </a>
@@ -248,7 +257,7 @@ text-align: center;
                   id="download"
                   download
                  href={Transcripts} >
-                    < FaFileDownload className=" text-light"/> {""}
+                    < FaFileDownload className=" text-light"/>{""}
         <span className="text-decoration-none"
         style={{marginLeft:'5px'}}>Unofficial Transcripts</span>
               </a>
@@ -258,7 +267,7 @@ text-align: center;
                   id="download"
                   download
                  href={Calendar} >
-                    < FaFileDownload className=" text-light"/> {""}
+                    < FaFileDownload className=" text-light"/>{""}
         <span className="text-decoration-none"
         style={{marginLeft:'5px'}}>Game Schedules</span>
               </a>
@@ -288,7 +297,7 @@ text-align: center;
 
 
   {/**FOR SMALL SCREENS */}
-  <div className="container w3-hide-large w3-margin-left">
+  <div className="mt-2 w3-hide-large">
   <p className=" text-white">Connect on Social Media:</p>
   <ul className="social-icons"
              >

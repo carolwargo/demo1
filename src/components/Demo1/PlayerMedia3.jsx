@@ -47,34 +47,32 @@ export default function FloatingActionButtonZoom() {
           {({ inView, ref }) => (
             <div
               ref={ref}
-              className={`w3-content w3-justify w3-text-grey w3-padding-16  
+              className={`w3-content w3-justify w3-text-grey w3-padding-top-24 
             ${inView ? "animate-fade-in" : ""}`}
               id="Media"
             >
-               <hr className="w3-opacity w3-text-white w3-padding-24" />
+               <hr className="w3-opacity w3-text-white w3-padding-24 mt-4" />
                            <h1 className="w3-text-light-grey w3-margin-bottom text-start w3-animate-zoom ">Video Library</h1>
            
-        <div className="row g-0"
+        <div className="row g-0 w3-padding-16"
         style={{ 
           boxShadow: '2px 2px 2px rgba(105, 105, 105), -2px 2px 2px rgba(65, 65, 65), 2px -2px 2px rgba(65, 65, 65), 2px 2px -2px 2px rgba(65, 65, 65)'}}>
-            <div className="col-sm-12 col-md-8 col-lg-8"
-             style={{ minHeight: "375px" }}
-      >
-      
-<video src={videoSrc} controls className="w-100" style={{ minHeight: "375px", minWidth: "100%" }}>
-<div className="play-icon">
-    <i className="fa fa-play"></i>
-  </div>
-</video>
-              </div>
+     <div className="col-sm-12 col-md-8 col-lg-8 video-container border-black">
+  <video src={videoSrc} controls className="w-100 border-black">
+    <div className="play-icon">
+      <i className="fa fa-play"></i>
+    </div>
+  </video>
+</div>
+
           
-            <div className="col-sm-12 col-md-4 col-lg-4">
+            <div className="col-sm-12 col-md-4 col-lg-4 border-black">
              
             <Box
          className="text-white"
             style={{  
               boxShadow: '2px 2px 2px 4px rgba(0, 0, 0, 0.6)',
-              background: 'linear-gradient(to bottom, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #222222, #181818, #111111, #0000, #000,  #000 )'}}
+              background: 'linear-gradient(to bottom, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #323334, #222222, #181818, #0000,   #000 )'}}
       sx={{
         position: 'relative',
       }}
@@ -94,13 +92,11 @@ export default function FloatingActionButtonZoom() {
 </AppBar>
 
 
-{/**HITTING PANEL START */}
-      <TabPanel>
-      <div className="hitting-container">
+      <div className="options-container">
   {/* HITTING IMAGE 1 */}
-  <div className="row d-flex justify-content-between align-items-center">
+  <div className="row d-flex justify-content-between align-items-center container mt-3 mb-0">
         <div className="col-6 col-md-6 col-lg-6 position-relative">
-          <div className="image-container" onClick={() => setVideoSrc(Offense)}>
+            <div className="image-container"  onClick={() => setVideoSrc(Offense)}>
             <img src={Offense} alt="small" className="img-fluid shadow w3-grayscale-max" />
             <div className="image-mask"></div>
           <div className="play-icon">
@@ -122,16 +118,19 @@ export default function FloatingActionButtonZoom() {
       </div>
 
       <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
+  className="d-block rounded mt-1"
+  style={{
+    height: "3px", // Adjust thickness
+    backgroundColor: "black", // Change to solid black
+    border: "none", // Remove default styling
+    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", // Darker shadow
+  }}
+/>
 
       {/* HITTING IMAGE 2 */}
-      <div className="row d-flex justify-content-between align-items-center mt-3">
+      <div className="row d-flex justify-content-between align-items-center container mt-2 mb-0">
         <div className="col-6 col-md-6 col-lg-6 position-relative">
-          <div className="image-container" onClick={() => setVideoSrc(Defense)}>
+            <div className="image-container"  onClick={() => setVideoSrc(Defense)}>
             <img src={Defense} alt="small" className="img-fluid shadow w3-grayscale-max" />
             <div className="image-mask"></div>
           <div className="play-icon">
@@ -152,13 +151,17 @@ export default function FloatingActionButtonZoom() {
         </div>
       </div>
       <hr
-    className="d-block bg-secondary rounded mt-2"
-    style={{
-      boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    }}
-  />
+  className="d-block rounded mt-1"
+  style={{
+    height: "3px", // Adjust thickness
+    backgroundColor: "black", // Change to solid black
+    border: "none", // Remove default styling
+    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", // Darker shadow
+  }}
+/>
+
       {/* HITTING IMAGE 3 */}
-      <div className="row d-flex justify-content-between align-items-center">
+      <div className="row d-flex justify-content-between align-items-center container mt-2 mb-0">
         <div className="col-6 col-md-6 col-lg-6 position-relative">
           <div className="image-container" onClick={() => setVideoSrc(MLB)}>
             <img src={MLB} alt="small" className="img-fluid shadow-lg w3-grayscale-max" />
@@ -182,8 +185,6 @@ export default function FloatingActionButtonZoom() {
       </div>
 </div>
 
-</TabPanel>
-{/**HITTING PANEL START */}
 
     </Box>
             </div>

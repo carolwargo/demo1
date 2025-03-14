@@ -2,6 +2,8 @@ import D1Table from '../components/Tables/D1Table'
 import D2Table from '../components/Tables/D2Table'
 import D3Table from '../components/Tables/D3Table'
 import ExpandCards from '../components/Demo1/ExpandCards'  
+import CarouselSmall from '../components/CarouselSmall'
+import BarChart from '../components/NCAA/DonutChart'
 import '../App.css';
 
 const TablePage = () => {
@@ -20,7 +22,9 @@ const TablePage = () => {
   <D3Table /> 
   </div>
 
+<CarouselSmall />
   <ExpandCards />
+  <BarChart />  
   </div>
   );
 }

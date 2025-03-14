@@ -9,10 +9,11 @@
 
 .wrapper {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -5rem;
 }
 
 .container {
@@ -25,6 +26,7 @@
 .card {
   width: 80px;
   border-radius: 2.5rem;
+  border: #202020 solid 1px;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
@@ -32,7 +34,7 @@
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 30px -5px rgba(77, 76, 76, 0.8);
 }
 
 .row {
@@ -42,8 +44,9 @@
 }
 
 .icon {
-  background: rgb(92, 92, 94);
-  color: white;
+  background: rgb(54, 53, 53);
+  color: rgb(252, 250, 250);
+  font-weight: 600;
   border-radius: 50%;
   width: 50px;
   display: flex;
@@ -67,14 +70,14 @@
 }
 
 .description h5 {
-  text-transform: uppercase;
-  margin-bottom: 2px; /* Reduce space below the heading */
+  margin-bottom: -12px; /* Reduce space below the heading */
 }
 
 .description a {
-  color: #b0b0ba;
-  font-size: 13px;
+  color: #939394  !important;
+  text-shadow: 0 0 1px #939394; 
   margin-top: 0;  /* Remove any space above the paragraph */
+  text-decoration: underline;
 }
 
 
@@ -83,7 +86,7 @@
 }
 
 .input:checked + label {
-  width: 410px;
+  width: 450px;
 }
 
 .input:checked + label .description {

@@ -60,16 +60,15 @@ const PlayerCards = () => {
              {({ inView, ref }) => (
                <div
                  ref={ref}
-                 className={`w3-content w3-justify w3-text-light w3-padding-24 
+                 className={`w3-content w3-justify w3-text-light w3-padding-top-24 
                ${inView ? "animate-fade-in" : ""}`}
                  id="cards"
                >
 
 
-<hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
-          <h1 className="w3-text-light-grey w3-margin-bottom">Team Affiliations</h1>
+          <h1 className="w3-text-light-grey w3-margin-bottom w3-margin-top">Team Affiliations</h1>
           
-           <div className="row d-flex justify-content-center align-items-center">
+           <div className="row d-flex justify-content-center align-items-center w3-padding-16">
   
   
   

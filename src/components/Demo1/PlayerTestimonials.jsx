@@ -79,18 +79,16 @@ const PlayerTestimonials = () => {
       </style>
       {/* Testimonial Sections */}
       <InView triggerOnce={true}>
-        {({ inView, ref }) => (
-          <div
-            ref={ref}
-            className={`w3-content w3-justify w3-text-grey w3-padding-top-24 
-            ${inView ? "animate-fade-in" : ""}`}
+          {({ inView, ref }) => (
+            <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-top-24 
+               ${inView ? "animate-fade-in" : ""}`}
             id="testimonials"
-          >
-            <hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
+        >
+               <hr className="w3-opacity w3-text-white w3-padding-24 w3-margin-top" />
             <h1 className="w3-text-light-grey w3-margin-bottom">Reputation</h1>
-            <div className="row w3-padding-16">
+            <div className="row ">
               {/**Letter1 */}
-              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small mt-3">
                 <div className="container">
                   <img
                     src={Teacher}
@@ -98,19 +96,16 @@ const PlayerTestimonials = () => {
                     className="w3-left w3-circle w3-margin-right w3-grayscale-max w3-image"
                     style={{ width: "80px" }}
                   />
-                  <p className="w3-large w3-margin-right fw-bold">
-                    {" "}
-                    JANE DOE.
-                    <br />
-                    <i className=" small">Teacher- HHS</i>.
-                    <br />
-                    <i className=" small  fw-light">
-                      &quot;Joe Baseball is the best. Lorem adipisicing elit.
-                      Voluptate quibusdam totam pariatur accusamus, quam velit
-                      at aliquam, porro tempore fuga neque similique.
-                      Necessitatibus, iusto
+             
+             
+             <h5> <b className="text-light mb-0">JANE DOE </b> 
+                   <span className=" w3-hide-small">-Teacher HHS.</span>
+                 </h5>
+                 <p className="fw-light"> 
+                 &quot;Joe Baseball is the best 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ut blanditiis possimus voluptate quam incidunt ipsum in error molestias, alias recusandae temporibus maiores quos odio saepe totam enim fugiat voluptatum....
                       <span
-                        className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
+                        className="text-decoration-underline fw-light link-light small ms-2 continue-link w3-hover-opacity"
                         onClick={() => {
                           setSelectedLetter(
                             Letters.find((letter) => letter.id === 3)
@@ -120,17 +115,15 @@ const PlayerTestimonials = () => {
                         style={{
                           cursor: "pointer",
                           color: "#007bff",
-                          textDecoration: "underline",
+                        
                         }}
-                      >
-                        See Full Letter
+                      >    View Letter
                       </span>
-                    </i>
                   </p>
                 </div>
               </div>
               {/**Letter2 */}
-              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small mt-3">
                 <div className="container">
                   <img
                     src={Principal}
@@ -138,20 +131,14 @@ const PlayerTestimonials = () => {
                     className="w3-left w3-circle w3-margin-right w3-grayscale-max"
                     style={{ width: "80px" }}
                   />
-
-                  <p className="w3-large w3-margin-right fw-bold">
-                    {" "}
-                    JOHN DOUGH.
-                    <br />
-                    <i className=" small">Principal- HHS</i>.
-                    <br />
-                    <i className=" small  fw-light">
-                      &quot;Joe Baseball is the best. Lorem adipisicing elit.
-                      Voluptate quibusdam totam pariatur accusamus, quam velit
-                      at aliquam, porro tempore fuga neque similique.
-                      Necessitatibus, iusto
+    <h5> <b className="text-light mb-0">JOHN DOUGH </b> 
+                   <span className=" w3-hide-small">-Principal HHS.</span>
+                 </h5>
+                   <p className="fw-light"> 
+                   &quot;Joe Baseball is the best 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ut blanditiis possimus voluptate quam incidunt ipsum in error molestias, alias recusandae temporibus maiores quos odio saepe totam enim fugiat voluptatum....
                       <span
-                        className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
+                        className="text-decoration-underline fw-light link-light small ms-2 continue-link w3-hover-opacity"
                         onClick={() => {
                           setSelectedLetter(
                             Letters.find((letter) => letter.id === 4)
@@ -161,17 +148,15 @@ const PlayerTestimonials = () => {
                         style={{
                           cursor: "pointer",
                           color: "#007bff",
-                          textDecoration: "underline",
+                        
                         }}
-                      >
-                        See Full Letter
+                      >    View Letter 
                       </span>
-                    </i>
                   </p>
                 </div>
               </div>
               {/**Letter3 */}
-              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small mt-3">
                 <div className="container">
                   <img
                     src={Virginia}
@@ -179,78 +164,64 @@ const PlayerTestimonials = () => {
                     className="w3-left w3-circle w3-margin-right w3-grayscale-max"
                     style={{ width: "80px" }}
                   />
-                  <p className="w3-large w3-margin-right fw-bold">
-                    {" "}
-                    JAX DOUGH.
-                    <br />
-                    <i className=" small">Varsity Coach- HHS</i>.
-                    <br />
-                    <span>
-                      <i className=" small  fw-light">
-                        &quot;Joe Baseball is the best. Lorem adipisicing elit.
-                        Voluptate quibusdam totam pariatur accusamus, quam velit
-                        at aliquam, porro tempore fuga neque similique.
-                        Necessitatibus, iusto
-                        <span
-                          className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
-                          onClick={() => {
-                            setSelectedLetter(
-                              Letters.find((letter) => letter.id === 1)
-                            ); // Select Letter4 (update as needed)
-                            setIsModalOpen(true);
-                          }}
-                          style={{
-                            cursor: "pointer",
-                            color: "#007bff",
-                            textDecoration: "underline",
-                          }}
-                        >
-                          See Full Letter
-                        </span>
-                      </i>
-                    </span>
+                      <h5> <b className="text-light mb-0">JAX DOUGH </b> 
+                   <span className=" w3-hide-small">-Head Coach HHS.</span>
+                 </h5>
+                  <p> 
+                      &quot;Joe Baseball is the best 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ut blanditiis possimus voluptate quam incidunt ipsum in error molestias, alias recusandae temporibus maiores quos odio saepe totam enim fugiat voluptatum....
+                      <span
+                        className="text-decoration-underline small fw-light link-light ms-2 continue-link w3-hover-opacity"
+                        onClick={() => {
+                          setSelectedLetter(
+                            Letters.find((letter) => letter.id === 1)
+                          ); // Select Letter4 (update as needed)
+                          setIsModalOpen(true);
+                        }}
+                        style={{
+                          cursor: "pointer",
+                          color: "#007bff",
+                        
+                        }}
+                      >
+                     View Letter
+                      </span>
                   </p>
+            
                 </div>
               </div>
               {/**Letter4 */}
-              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+              <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small mt-3">
                 <div className="container">
                   <img
-                    src={Wake}
+                  src={Wake}
                     alt="wake coach"
                     className="w3-left w3-circle w3-margin-right w3-grayscale-max"
                     style={{ width: "80px" }}
                   />
-                  <p className="w3-large w3-margin-right fw-bold">
-                    {" "}
-                    JOE COACH.
-                    <br />
-                    <i className=" small">Summer Coach- Team</i>.
-                    <br />
-                    <span>
-                      <i className=" small  fw-light">
-                        &quot;Joe Baseball is the best. Lorem adipisicing elit.
-                        Voluptate quibusdam totam pariatur accusamus, quam velit
-                        at aliquam, porro tempore fuga neque similique.
-                        Necessitatibus, iusto
-                        <span
-                          className="text-decoration-none fw-light link-light ms-2 continue-link w3-hover-opacity"
-                          onClick={() => {
-                            setSelectedLetter(
-                              Letters.find((letter) => letter.id === 2)
-                            ); // Select Letter4 (update as needed)
-                            setIsModalOpen(true);
-                          }}
-                          style={{
-                            cursor: "pointer",
-                            color: "#007bff",
-                            textDecoration: "underline",
-                          }}
-                        >
-                          See Full Letter
-                        </span>
-                      </i>
-                    </span>
+                  
+      
+                    <h5> <b className="text-light mb-0">JOE COACH </b> 
+                   <span className=" w3-hide-small">-Summer Coach</span>
+                 </h5>
+                   <p className="fw-light"> 
+                   &quot;Joe Baseball is the best 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ut blanditiis possimus voluptate quam incidunt ipsum in error molestias, alias recusandae temporibus maiores quos odio saepe totam enim fugiat voluptatum....
+                      <span
+                        className="text-decoration-underline fw-light link-light small ms-2 continue-link w3-hover-opacity"
+                        onClick={() => {
+                          setSelectedLetter(
+                            Letters.find((letter) => letter.id === 2)
+                          ); // Select Letter4 (update as needed)
+                          setIsModalOpen(true);
+                        }}
+                        style={{
+                          cursor: "pointer",
+                          color: "#007bff",
+                        
+                        }}
+                      >    View Letter
+                      </span>
                   </p>
                 </div>
               </div>

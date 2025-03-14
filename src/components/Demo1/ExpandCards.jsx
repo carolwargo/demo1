@@ -11,12 +11,13 @@ import NCAA from '../../assets/images/Expand/NCAA.png';
 
 const PlayerPosts = () => {
   const cards = [
-    { id: 'c1', icon: '1', title: 'POST TITLE', img: State, link: 'https://x.com'},
-    { id: 'c2', icon: '2', title: 'POST TITLE', img: B26, link: 'https://x.com' },
-    { id: 'c3', icon: '3', title: 'POST TITLE', img: TeamMD , link: 'https://x.com'}, 
-    { id: 'c4', icon: '4', title: 'POST TITLE', img: NCAA, link: 'https://x.com' },
-    { id: 'c5', icon: '5', title: 'POST TITLE', img: Preseason, link: 'https://x.com' },
-    { id: 'c6', icon: '6', title: 'POST TITLE', img: Conf, link: 'https://x.com' },
+    { id: 'c1', icon: '1', title: 'Post Title', img: State, link: 'https://x.com'},
+    { id: 'c2', icon: '2', title: 'Post Title', img: B26, link: 'https://x.com' },
+    { id: 'c3', icon: '3', title: 'Post Title', img: TeamMD , link: 'https://x.com'}, 
+    { id: 'c4', icon: '4', title: 'Post Title', img: NCAA, link: 'https://x.com' },
+    { id: 'c5', icon: '5', title: 'Post Title', img: Preseason, link: 'https://x.com' },
+    { id: 'c6', icon: '6', title: 'Post Title', img: Conf, link: 'https://x.com' },
+    { id: 'c7', icon: '7', title: 'Post Title', img: B26, link: 'https://x.com'},
   ];
 
   return (
@@ -31,10 +32,10 @@ const PlayerPosts = () => {
                ${inView ? "animate-fade-in" : ""}`}
               id="profile"
             >
-        <div className="container">
-              <h5 className="card-title">Player Posts</h5>
-              <p className="card-text">VIEW POST</p>
-            </div>
+              
+        <div >
+        <h1 className="w3-text-light-grey w3-margin-top">What&apos;s Happening</h1>
+          
           <div className={styles.wrapper}>
             <div className={styles.container}>
               {cards.map((card, index) => (
@@ -63,8 +64,8 @@ const PlayerPosts = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="w3-text-grey hover-zoom"
-    >
-      VIEW THIS POST
+    > View <i className="fab fa-x-twitter"></i> Post
+  
     </a>
                       </div>
                     </div>
@@ -73,10 +74,10 @@ const PlayerPosts = () => {
               ))}
             </div>
           </div>
+            </div>
         </div>
           )}
         </InView>
-
       </div>
     </div>
   );

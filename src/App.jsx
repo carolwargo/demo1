@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import TablesPage from './pages/TablesPage';
-import TopNav from './components/TopNav';
+import DemoLayout from './components/Layouts/DemoLayout'; 
+import NCAAPage from './pages/NCAAPage';
 import './App.css';  
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -18,11 +19,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename='demo1'> 
-        <TopNav />
+      
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route element={<DemoLayout />}>
+    
+        </Route>
           
-       
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/ncaa" element={<NCAAPage />} />
           <Route path="/media" element={
             <Suspense fallback={<div>Loading...</div>}>
               <MediaVideo />
